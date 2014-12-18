@@ -1,11 +1,21 @@
 package domein;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.util.Date;
 
 /**
  * Created by Jonas on 18/12/2014.
  */
+
+@Entity
 public class Wedstrijd {
+
+    @Id
+    @GeneratedValue
+    private int id;
+
     private Date datum;
     private Date startUur;
     private String tegenstander;
